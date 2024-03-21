@@ -53,3 +53,63 @@ function discountCalc(price, discount){
 
 let discountValue = discountCalc(200, 15)
 console.log(discountValue)
+
+//Operadores aritmeticos
+
+let num1 = 1
+let num2 = 2
+
+console.log(num1 + num2)
+console.log(num1 - num2)
+console.log(num1 * num2)
+console.log(num1 / num2)
+console.log(num1 % num2)
+console.log(num1 ** num2)
+console.log(Math.sqrt(25))
+
+//Operadores de atribuiçao
+
+let num3 = 10
+
+console.log(num3 += 20)
+console.log(num3 -= 20)
+console.log(num3 *= 20)
+console.log(num3 /= 20)
+
+//Operadores de comparaçao
+
+let num4 = 10
+
+console.log(num4 > 0)
+console.log(num4 < 0)
+console.log(num4 >= 10)
+console.log(num4 <= 10)
+
+console.log(num4 != 10)
+console.log(num4 == 10)
+
+//Operadores de igualdade
+
+let num5 = 1
+let num6 = '1'
+
+console.log(num5 == num6)
+console.log(num5 === num6)
+
+// operadores ternários
+
+let driver = 120
+let speed = driver > 120 ? 'above': 'below'
+
+console.log(speed)
+
+//operadores logicos com strings
+
+let temIdadeMinima = false
+let temTituloEleitor = true
+
+let podeVotar = temIdadeMinima && temTituloEleitor
+console.log(podeVotar)
+
+let podeViajar = !podeVotar
+console.log(podeViajar)
