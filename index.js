@@ -113,3 +113,11 @@ console.log(podeVotar)
 
 let podeViajar = !podeVotar
 console.log(podeViajar)
+
+// operadores lógicos com string
+
+let corCliente = undefined
+let corEstoque = 'black'
+let corVendida = corCliente || corEstoque
+
+console.log(corVendida)
