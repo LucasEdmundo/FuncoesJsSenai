@@ -38,15 +38,15 @@ console.log(cars)
 
 //Functions
 
-function saleStatus(status, total){
+function saleStatus(status, total) {
     console.log('Transaction: ' + status + '! Total Amount $' + total)
 }
 
 
 saleStatus('Approved', 200)
 
-function discountCalc(price, discount){
-    let total = price - (price * discount /100) 
+function discountCalc(price, discount) {
+    let total = price - (price * discount / 100)
     return total
 }
 
@@ -99,7 +99,7 @@ console.log(num5 === num6)
 // operadores ternários
 
 let driver = 120
-let speed = driver > 120 ? 'above': 'below'
+let speed = driver > 120 ? 'above' : 'below'
 
 console.log(speed)
 
@@ -121,3 +121,85 @@ let corEstoque = 'black'
 let corVendida = corCliente || corEstoque
 
 console.log(corVendida)
+
+// precedencia de operadores
+
+let num7 = (3 + 4) * 2
+
+// If ... Else
+
+let driverSpeed = 101
+
+if (driverSpeed > 100) {
+    console.log('Above speed limit!')
+} else if (driverSpeed >= 60 && driverSpeed <= 100) {
+    console.log('Normally speed!')
+}
+else {
+    console.log('Below speed limit!')
+}
+
+// Switch case
+
+let airportName = 'MCO'
+switch (airportName) {
+    case 'MCO':
+        console.log('Orlando International Airport')
+        break
+    case 'GRU':
+        console.log('São Paulo International Airport')
+        break
+    case 'Lax':
+        console.log('Los Angeles International Airport')
+        break
+    case 'LAS':
+        console.log('Las Vegas International Airport')
+        break
+    default:
+        console.log('Airport not found!')
+        break
+}
+
+// For loop
+
+for (let i = 1; i <= 10; i++) {
+    console.log('Item: ' + i)
+}
+
+// While loop
+
+// let i = 1
+// while(i <= 10){
+//     console.log('Numero: ' + i)
+//     i++
+// }
+
+//Do while loop
+
+let i = 1
+do {
+    console.log('Numero: ' + i)
+    i++
+}while(i <= 10)
+
+// For in loop
+
+const Mycar = {
+    model: 'Bmw',
+    year: '2020',
+    color: 'White',
+    km: 68000
+}
+
+for (let key in Mycar) {
+    console.log(key + ': ' + Mycar[key])
+}
+
+// For of loop
+
+const friends = ['João', 'Maria', 'José', 'Pedro']
+
+for (let friend of friends) {
+    console.log(friend)
+}
+
