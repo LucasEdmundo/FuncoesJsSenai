@@ -180,7 +180,7 @@ let i = 1
 do {
     console.log('Numero: ' + i)
     i++
-}while(i <= 10)
+} while (i <= 10)
 
 // For in loop
 
@@ -203,3 +203,91 @@ for (let friend of friends) {
     console.log(friend)
 }
 
+//OOP JavaScript
+
+let bookTitle = 'Atomic Habits'
+let bookAuthor = 'James Clear'
+let bookPages = '250'
+let bookPrice = '20'
+
+/*
+const book = {
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    pages: '250',
+    price: '20',
+    chapters:{
+        chapter1: 'Introduction',
+        chapter2: 'The Fundamentals of Atomic Habits',
+        chapter3: 'How your habits shape your identity',
+    },
+    printBook: function(){
+        console.log(book.price)
+    }
+}
+book.printBook()
+
+for (let key in book.chapters) {
+    console.log(key + ': ' + book.chapters[key])
+}
+*/
+
+// Factory function
+
+/*
+function createBook(title, author, pages, price) {
+    const book = {
+        title: title,
+        author: author,
+        pages: pages,
+        price: price,
+        
+        printBook: function(){
+            console.log('Printing book')
+        }
+    }
+   return book
+}
+
+const book1 = createBook('Atomic Habits', 'James Clear', '250', '20')
+const book2 = createBook('The 4-hour Workweek', 'Tim Ferriss', '250', '20')
+book1.color = 'red'
+console.log(book1, book2)
+*/
+
+// Constructor function
+
+function CreateBook(title, author, pages, price) {
+    this.title = title
+    this.author = author
+    this.pages = pages
+    this.price = price
+}
+
+const Book1 = new CreateBook('Atomic Habits', 'James Clear', '250', '20')
+console.log(Book1)
+delete Book1.price
+console.log(Book1)
+
+// Exemplo cliente banco
+
+function ClientBank(nome, idade, cpf, transacao, pix, saldo, situacaoCadastral, situacaoFinanciamento) {
+    this.nome = nome
+    this.idade = idade
+    this.cpf = cpf
+    this.transacao = transacao
+    this.pix = pix
+    this.saldo = saldo
+    this.situacaoCadastral = situacaoCadastral
+    this.situacaoFinanciamento = situacaoFinanciamento
+}
+const Client1 = new ClientBank('João', 29, '123.456.789-00', 'Deposito', 'Sim', 1000, 'Ativo', 'Aprovado', 'Atrasado')
+console.log(Client1)
+//console.log(Client1.pix)
+
+// Build-in objects
+
+console.log(Math.max(2, 32, 21, 9873, 7645, 36414, 21))
+console.log(Math.min(2, 32, 21, 9873, 7645, 36414, 21))
+console.log(Math.round(2.4))
+console.log(Math.PI)
