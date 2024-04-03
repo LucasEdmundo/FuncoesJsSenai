@@ -291,3 +291,84 @@ console.log(Math.max(2, 32, 21, 9873, 7645, 36414, 21))
 console.log(Math.min(2, 32, 21, 9873, 7645, 36414, 21))
 console.log(Math.round(2.4))
 console.log(Math.PI)
+console.log(Date())
+
+// String
+
+let message = "Hey, whats up ?"
+console.log(message.startsWith('Hey'))
+console.log(message.endsWith('up'))
+console.log(message.includes('whats'))
+console.log(message.length)
+
+// Template literals
+
+let name = 'João'
+
+const email = 'Hi ' + name + ' he meet is schudeled to 10 am!\n'
+const email2 = `Hi ${name} The meet is schudeled to 10 am!`
+
+console.log(email, email2)
+
+// Array
+
+const random = ['Marcos', 1, true]
+console.log(random[0])
+
+// Add item em Array
+
+let num = [7,8,9]
+num.push(10)
+num.unshift(1,2,3)
+num.splice(3,0,4,5,6)
+console.log(num)
+
+//num.pop()
+//num.shift()
+//num.splice(3,3)
+
+
+// Clean an Array
+
+//num =[]
+//num.length = 0
+//num.splice(0, num.length)
+
+// Concatenando Arrays
+
+let letters = ['a', 'b', 'c']
+all = num.concat(letters)
+console.log(all)
+
+half = all.slice(3,5)
+console.log(half)
+
+// Joining Arrays
+
+let clients = ['João', 'Maria', 'José', 'Pedro']
+console.log(clients)
+let clientsJoin = clients.join(' ,')
+console.log(clientsJoin)
+
+
+// Localizando itens dentro de uma Array primitiva
+
+/*console.log(num.indexOf(8))
+console.log(num.includes(21))
+
+// Arrays de referência
+
+const movies = [
+    {id:1, title: 'The Matrix', year: 1999, rating: 8.7},
+    {id:1, title: 'The GodFather', year: 1972, rating: 9.29},
+    {id:1, title: 'Back to the Future', year: 1985, rating: 8.5},
+]
+
+console.log(movies.find(function(movie){
+    return movie.title === 'The Matrix'
+}))
+
+// Arrow Functions
+
+console.log(movies.find(movie => movie.title === 'The Matrix'))
+*/
