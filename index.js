@@ -401,3 +401,34 @@ console.log(tempPositive)
 
 const tempNegative = tempLondon.filter(value=> value < 0)
 console.log(tempNegative)
+
+// Hoisting
+// Function declaration
+
+movie()
+
+function movie() {
+    console.log('The Matrix')
+}
+
+// Function expression
+
+const car = function(){
+    console.log('BMW')
+}
+car()
+
+const truck = car
+truck()
+
+// Arguments Object 
+
+function priceValue(){
+    let totalValue = 0
+    for (let value of arguments){
+        totalValue += value
+    }
+    return totalValue
+}
+
+console.log(priceValue(2, 3, 4, 5, 6))
