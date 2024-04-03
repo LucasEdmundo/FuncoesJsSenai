@@ -234,7 +234,6 @@ for (let key in book.chapters) {
 
 // Factory function
 
-/*
 function createBook(title, author, pages, price) {
     const book = {
         title: title,
@@ -253,7 +252,7 @@ const book1 = createBook('Atomic Habits', 'James Clear', '250', '20')
 const book2 = createBook('The 4-hour Workweek', 'Tim Ferriss', '250', '20')
 book1.color = 'red'
 console.log(book1, book2)
-*/
+
 
 // Constructor function
 
@@ -359,7 +358,7 @@ console.log(clients)
 
 // Localizando itens dentro de uma Array primitiva
 
-/*console.log(num.indexOf(8))
+console.log(num.indexOf(8))
 console.log(num.includes(21))
 
 // Arrays de referência
@@ -377,4 +376,28 @@ console.log(movies.find(function(movie){
 // Arrow Functions
 
 console.log(movies.find(movie => movie.title === 'The Matrix'))
+
+// Filtrando elementos dentro de uma Array 
+
+/*const tempLondon = [18,-2, -13, 1, 3, 0, 11]
+const tempPositive = tempLondon.filter(function(value){
+    return value >= 0
+})
+
+console.log(tempPositive)
 */
+
+// Verificando elementos dentro de uma Array 
+
+const tempLondon = [18,-2, -13, 1, 3, 0, 11]
+/*const tempPositive = tempLondon.every(function(value){
+    return value >= 0
+})
+
+console.log(tempPositive)
+*/
+const tempPositive = tempLondon.filter(value=> value >= 0)
+console.log(tempPositive)
+
+const tempNegative = tempLondon.filter(value=> value < 0)
+console.log(tempNegative)
