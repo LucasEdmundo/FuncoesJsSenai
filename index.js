@@ -350,6 +350,12 @@ console.log(clients)
 let clientsJoin = clients.join(' ,')
 console.log(clientsJoin)
 
+// Organizar de forma Alfabetica
+
+clients.sort()
+console.log(clients)
+clients.reverse()
+console.log(clients)
 
 // Localizando itens dentro de uma Array primitiva
 
