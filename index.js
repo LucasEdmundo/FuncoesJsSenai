@@ -432,3 +432,9 @@ function priceValue(){
 }
 
 console.log(priceValue(2, 3, 4, 5, 6))
+
+function carLoan(loan, rate = 21.5, years=5){
+    return(loan * (rate/100) * years )+ loan
+}
+console.log(carLoan(80000))
+
