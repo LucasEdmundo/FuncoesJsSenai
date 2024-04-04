@@ -445,8 +445,7 @@ console.log(carLoan(80000))
 let number = prompt('Digite um numero: ')
 
 if (number % 2 === 0){
-    alert('O numero ' + number + ' é par!')
+    document.getElementById('result').innerHTML=number + ' é par!'
 }else{
-    alert('O numero ' + number + ' é impar!')
-    console.log(number)
+    document.getElementById('result').innerHTML=number + ' é impar!'
 }
