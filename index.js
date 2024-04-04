@@ -438,3 +438,15 @@ function carLoan(loan, rate = 21.5, years=5){
 }
 console.log(carLoan(80000))
 
+
+// Par ou impar
+
+
+let number = prompt('Digite um numero: ')
+
+if (number % 2 === 0){
+    alert('O numero ' + number + ' é par!')
+}else{
+    alert('O numero ' + number + ' é impar!')
+    console.log(number)
+}
